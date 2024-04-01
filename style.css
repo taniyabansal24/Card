@@ -1,0 +1,95 @@
+.container {
+    margin-top: 12px;
+    border-top: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 10vw;
+    color: #183153;
+  }
+  .what-new-title h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p.size-sm {
+    font-size: 14px;
+  }
+  
+  p.muted {
+    color: #999;
+  }
+  .new-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5vw;
+    justify-content: center;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px;
+  }
+  .icon p:hover {
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}
+  .icon i {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .btn{
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 6px;
+  }
+  .btn span{
+    display: none;
+    padding: 0 21px;
+  }
+  .btn:hover{
+    background-color: #C3C6D1;
+  }
+
+  @media (max-width: 1151px) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .new-icons {
+      width: 100%;
+      margin-top: 20px; 
+    }
+  }
+  @media (min-width: 1151px) {
+    .btn {
+      order: 2;
+    }
+  }
+  @media (min-width: 768px) {
+    .btn span {
+      display: inline; 
+    }
+  }
+  @media (max-width: 768px) {
+    .what-new-title h3 {
+        font-size: 21px;
+      }
+    .what-new-title p {
+        font-size: 12px;
+      }
+    .btn{
+        font-size: 9px;
+    }
+    .icon i {
+        font-size: 21px;
+    }
+    .icon {
+        font-size: 8px;
+    }    
+  }
